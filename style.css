@@ -1,7 +1,4 @@
-/* Feuille de style */
-
-
-/* Définitions des polices Raleway */
+/* Définitions des polices personalisée Raleway */
 @font-face {
     font-family: 'ralewaythin';
     src: url('Polices/raleway-variablefont_wght-webfont.eot');
@@ -15,3 +12,133 @@
 }
 
 /* Eléments principaux de la page */
+
+body {
+    font-family: 'ralewaythin', 'Arial', 'sans-serif';
+    font-size: small;
+    font-style: normal;
+    font-weight: normal;
+    background-color: white;
+}
+
+
+
+/* Eléments "Top Section" (Hébergements à Marseille) */
+
+#hebergement {
+    display: inline-block;
+    vertical-align: top;
+    background-color:#F2F2F2;
+    border-radius: 3%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+#box1{
+    display:flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+}
+
+.auberge {
+    max-width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px; 
+    border-radius: 5%;
+    list-style: none;
+}
+
+.mer {
+    max-width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px; 
+    border-radius: 5%;
+    list-style: none;
+}
+
+.port {
+    max-width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5%;
+    list-style: none;
+}
+
+.panier {
+    max-width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px; 
+    border-radius: 5%;
+    list-style: none;
+}
+
+.mouettes {
+    max-width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px; 
+    border-radius: 5%;
+    list-style: none;
+}
+
+.amina {
+    max-width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px; 
+    border-radius: 5%;
+    list-style: none;
+}
+
+/* Elements "Top section" (Les plus populaires) */
+
+#populaire {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #F2F2F2;
+    border-radius: 3%;
+}
+
+.text {
+    
+}
+
+#box2{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.soleil {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5%;
+    list-style: none;
+}
+
+.chambres {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5%;
+    list-style: none;
+}
+
+.hotel {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5%;
+    list-style: none;
+}
