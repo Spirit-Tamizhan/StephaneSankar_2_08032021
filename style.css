@@ -32,10 +32,16 @@ body {
     border-radius: 3%;
 }
 
-.link {
+.lien {
     text-decoration: none;
     color: black;
     font-weight: bolder;
+    text-align: center;
+}
+
+.fa-star:before {
+    content: "\f005";
+    color: #0065FC;
 }
 
 #box1{
@@ -108,7 +114,7 @@ body {
     border-radius: 3%;
 }
 
-.text {
+.fa-chart::before{
     
 }
 
