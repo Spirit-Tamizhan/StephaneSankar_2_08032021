@@ -36,7 +36,6 @@ body {
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    text-align: center;
 }
 
 .fa-star:before {
@@ -146,5 +145,97 @@ body {
     padding: 5px;
     margin: 5px;
     border-radius: 5%;
+    list-style: none;
+}
+
+/* Elements Bottom section (Activités à Marseille) */
+
+#activites{
+    display: inline-block;
+}
+
+#bloc1{
+    display: block;
+    list-style: none;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+}
+
+#bloc2{
+    display: block; 
+    list-style: none;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+}
+
+#bloc3{
+    display:block;
+    list-style: none;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+}
+
+#bloc4{
+    display: block;
+    list-style: none;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+}
+
+#bloc5{
+    display: block;
+    list-style: none;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+}
+
+#bloc6{
+    display: block;
+    list-style: none;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+}
+
+.vieuxport{
+    
+}
+
+.fortdepomegues {
+    
+}
+
+.ilesdufrioul{
+
+}
+
+.parcnationaldesclanques{
+    
+}
+
+.notredamedelagarde{
+    
+}
+
+.parclongchamp{
+    
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#propos{
+    list-style: none;
+}
+
+#hebergements{
+    list-style: none;
+}
+
+#assitance{
     list-style: none;
 }
