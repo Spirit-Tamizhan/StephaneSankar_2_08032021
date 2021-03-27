@@ -21,8 +21,6 @@ body {
     background-color: white;
 }
 
-
-
 /* Eléments "Top Section" (Hébergements à Marseille) */
 
 #hebergement {
@@ -35,7 +33,6 @@ body {
 .lien {
     text-decoration: none;
     color: black;
-    font-weight: bolder;
 }
 
 .fa-star:before {
@@ -46,8 +43,8 @@ body {
 #box1{
     display:flex;
     flex-direction: row;
-    margin: 5px;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .auberge {
@@ -148,94 +145,74 @@ body {
     list-style: none;
 }
 
-/* Elements Bottom section (Activités à Marseille) */
+/* Elements "Bottom section" (Activités à Marseille) */
 
-#activites{
-    display: inline-block;
+#activites {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
 }
 
-#bloc1{
-    display: block;
-    list-style: none;
-    border-bottom-left-radius:3%;
-    border-bottom-right-radius:3%;
+#activites h3{
+    font-weight: bolder;
+    font-size: medium;
 }
 
-#bloc2{
-    display: block; 
-    list-style: none;
-    border-bottom-left-radius:3%;
-    border-bottom-right-radius:3%;
+#activites ul {
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
 }
 
-#bloc3{
-    display:block;
-    list-style: none;
-    border-bottom-left-radius:3%;
-    border-bottom-right-radius:3%;
+#activites li { 
+    background-color:white;   
+    box-shadow: 0px 0px 10px 5px #F2F2F2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
 }
 
-#bloc4{
-    display: block;
-    list-style: none;
-    border-bottom-left-radius:3%;
-    border-bottom-right-radius:3%;
+#activites a{
+    text-decoration: none;
+    color: black;
 }
 
-#bloc5{
-    display: block;
-    list-style: none;
-    border-bottom-left-radius:3%;
-    border-bottom-right-radius:3%;
+#activites img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-#bloc6{
-    display: block;
-    list-style: none;
-    border-bottom-left-radius:3%;
-    border-bottom-right-radius:3%;
-}
-
-.vieuxport{
-    
-}
-
-.fortdepomegues {
-    
-}
-
-.ilesdufrioul{
-
-}
-
-.parcnationaldesclanques{
-    
-}
-
-.notredamedelagarde{
-    
-}
-
-.parclongchamp{
-    
+#activites p{
+    height: 25px;
+    margin: 10px;
 }
 
 /* Footer */
 
 footer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    background-color: #F2F2F2;
+    justify-content: space-between;
+    align-items: baseline;
+    width: auto;
 }
 
-#propos{
+footer ul {
     list-style: none;
+    padding: 0px;
+    margin: 30px;
 }
 
-#hebergements{
-    list-style: none;
+footer h4{
+    font-weight: bolder;
+    font-size: medium;
 }
 
-#assitance{
-    list-style: none;
+footer a {
+    text-decoration: none;
+    color: black;
 }
