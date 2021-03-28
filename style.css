@@ -11,7 +11,7 @@
     font-style: normal;
 }
 
-/* Eléments principaux de la page */
+/* Eléments principaux de la page  */
 
 body {
     font-family: 'ralewaythin', 'Arial', 'sans-serif';
@@ -21,18 +21,49 @@ body {
     background-color: white;
 }
 
-/* Eléments "Top Section" (Hébergements à Marseille) */
+/* Header et Navigation  */
+
+
+
+
+
+/* Top Section (Hébergements à Marseille) */
 
 #hebergement {
-    display: inline-block;
-    vertical-align: top;
-    background-color:#F2F2F2;
-    border-radius: 3%;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    width: auto;
 }
 
-.lien {
+#hebergement ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 5px;
+}
+
+#hebergement li{
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+    
+}
+#hebergement a{
     text-decoration: none;
     color: black;
+}
+
+#hebergement img{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#hebergement p{
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .fa-star:before {
@@ -40,115 +71,14 @@ body {
     color: #0065FC;
 }
 
-#box1{
-    display:flex;
-    flex-direction: row;
-    margin: 0px;
-    padding: 0px;
-}
+/* Aside section (Les plus populaires) */
 
-.auberge {
-    max-width: 100px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px; 
-    border-radius: 5%;
-    list-style: none;
-}
 
-.mer {
-    max-width: 100px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px; 
-    border-radius: 5%;
-    list-style: none;
-}
-
-.port {
-    max-width: 100px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5%;
-    list-style: none;
-}
-
-.panier {
-    max-width: 100px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px; 
-    border-radius: 5%;
-    list-style: none;
-}
-
-.mouettes {
-    max-width: 100px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px; 
-    border-radius: 5%;
-    list-style: none;
-}
-
-.amina {
-    max-width: 100px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px; 
-    border-radius: 5%;
-    list-style: none;
-}
-
-/* Elements "Top section" (Les plus populaires) */
-
-#populaire {
-    display: inline-block;
-    vertical-align: top;
-    background-color: #F2F2F2;
-    border-radius: 3%;
-}
-
-.fa-chart::before{
-    
-}
-
-#box2{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    padding: 5px;
-}
-
-.soleil {
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5%;
-    list-style: none;
-}
-
-.chambres {
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5%;
-    list-style: none;
-}
-
-.hotel {
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5%;
-    list-style: none;
-}
-
-/* Elements "Bottom section" (Activités à Marseille) */
+/* Bottom section (Activités à Marseille) */
 
 #activites {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     width: auto;
@@ -173,7 +103,7 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-bottom: 30px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #activites a{
