@@ -24,41 +24,78 @@ body {
 /* Header et Navigation  */
 
 
-
-
-
 /* Top Section (Hébergements à Marseille) */
 
 #hebergement {
+    display: inline-block;
     background-color: #F2F2F2;
     border-radius: 5px;
-    width: auto;
+    margin-right: 20px;
+}
+
+#herbergement h3{
+    font-size: medium;
+    font-weight: bolder;
 }
 
 #hebergement ul{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    list-style: none;
+    flex-wrap: wrap;
     padding-left: 0px;
-    margin-bottom: 5px;
+
 }
 
 #hebergement li{
+    flex: 1 0 0%;
     background-color: white;
     padding: 3px;
     border-radius: 5px;
-    
+    list-style: none;
 }
-#hebergement a{
-    text-decoration: none;
-    color: black;
+
+.aubergelacannebiere{
+    max-width: 100%;
+    width: 150px;
+    height: 70px;
+}
+
+.hotelduport{
+    max-width: 100%;
+    width: 150px;
+    height: 70px;
+}
+
+.hotellesmouettes{
+    max-width: 100%;
+    width: 150px;
+    height: 70px;
+}
+
+.hoteldelamer{
+    max-width: 100%;
+    width: 150px;
+    height: 70px;
+}
+
+.aubergelepanier{
+    max-width: 100%;
+    width: 150px;
+    height: 70px;
+}
+
+.hotelchezamina{
+    max-width: 100%;
+    width: 150px;
+    height: 70px;
 }
 
 #hebergement img{
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+}
+#hebergement a{
+    text-decoration: none;
+    color: black;
 }
 
 #hebergement p{
@@ -73,16 +110,65 @@ body {
 
 /* Aside section (Les plus populaires) */
 
-
-/* Bottom section (Activités à Marseille) */
-
-#activites {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
+#populaire {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
+
+#populaire h3{
+    display: inline-block;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#populaire ul{
+    list-style: none;
+    padding-left: 0px;
+    margin: 20px;
+}
+
+#populaire li{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#populaire div{
+    display: inline-block;
+    vertical-align: top;
+}
+.hlsdm{
+    max-width: 100%;
+    width: 100px;
+    height: 90px;
+}
+
+.acech{
+    max-width: 100%;
+    width: 100px;
+    height: 90px;
+}
+
+.htbeb{
+    max-width: 100%;
+    width: 100px;
+    height: 90px;
+}
+
+#populaire img{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#populaire a{
+    text-decoration: none;
+    color: black;
+}
+/* Bottom section (Activités à Marseille) */
 
 #activites h3{
     font-weight: bolder;
@@ -90,20 +176,60 @@ body {
 }
 
 #activites ul {
-   list-style: none;
-   padding: 0px;
-   margin: 0px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: baseline;
+   padding-left: 0px;
 }
 
-#activites li { 
-    background-color:white;   
-    box-shadow: 0px 0px 10px 5px #F2F2F2;
+#activites li {
+    flex: 1 0 0%;
+    list-style: none;
+    background-color:white;  
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    margin-bottom: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+.vieuxport{
+    max-width: 100%;
+    width: 205px;
+    height: 250px;
+}
+
+.fortdepomegues{
+    max-width: 100%;
+    width: 230px;
+    height: 160px;
+}
+
+.ilesdufrioul{
+    max-width: 100%;
+    width: 230px;
+    height: 80px;
+}
+
+.pndc{
+    max-width: 100%;
+    width: 205px;
+    height: 250px;
+}
+
+.nddla{
+    max-width: 100%;
+    width: 230px;
+    height: 100px;
+}
+
+.parclongchamp{
+    max-width: 100%;
+    width: 230px;
+    height: 120px;
 }
 
 #activites a{
@@ -117,32 +243,26 @@ body {
 }
 
 #activites p{
-    height: 25px;
+    font-weight: bolder;
+    height: 20px;
     margin: 10px;
 }
 
 /* Footer */
 
-footer{
+footer ul{
     display: flex;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
-    justify-content: space-between;
-    align-items: baseline;
-    width: auto;
+    padding-left: 0px;
 }
 
-footer ul {
+footer li{
+    flex: 1 0 0% ;
     list-style: none;
-    padding: 0px;
-    margin: 30px;
 }
 
-footer h4{
-    font-weight: bolder;
-    font-size: medium;
-}
-
-footer a {
+footer a{
     text-decoration: none;
     color: black;
 }
