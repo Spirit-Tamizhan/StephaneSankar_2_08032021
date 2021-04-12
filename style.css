@@ -23,6 +23,99 @@ body {
 
 /* Header et Navigation  */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+header div {
+    flex: 1 0 0%;
+    margin-top: 25px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+header nav ul li {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+header nav ul li .blue {
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+.recherche {
+    margin-bottom: 30px;
+}
+
+.recherche h1 {
+    margin-bottom: 10px;
+}
+
+.recherche p {
+    margin-top: 10px;
+}
+
+.recherche form {
+    display: flex;
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.recherche form div {
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+}
+
+.recherche form div .fa-map-marker-alt{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.recherche form input{
+    border: 1px solid #F2F2F2;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 230px;
+}
+.recherche form button{
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.recherche form button span{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.recherche form button .fa-search {
+    display: none;
+}
 
 /* Top Section (Hébergements à Marseille) */
 
@@ -170,99 +263,59 @@ body {
 }
 /* Bottom section (Activités à Marseille) */
 
-#activites h3{
-    font-weight: bolder;
-    font-size: medium;
-}
-
-#activites ul {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: baseline;
-   padding-left: 0px;
-}
-
-#activites li {
-    flex: 1 0 0%;
-    list-style: none;
-    background-color:white;  
-    box-shadow: 0px 0px 5px 5px #F2F2F2;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-
-.vieuxport{
+#activites div{
+    display: inline-block;
+    background-color:white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     max-width: 100%;
-    width: 205px;
-    height: 250px;
+    height: auto;
+}
+#activites div a .heighttop img{
+    width: 100%;
+    height: 200px;
 }
 
-.fortdepomegues{
-    max-width: 100%;
-    width: 230px;
-    height: 160px;
+#activites div a .heightbottom img{
+    width: 100%;
+    height: 73px;
 }
 
-.ilesdufrioul{
-    max-width: 100%;
-    width: 230px;
-    height: 80px;
+#activites div a p {
+    height: 25px;
 }
 
-.pndc{
-    max-width: 100%;
-    width: 205px;
-    height: 250px;
-}
-
-.nddla{
-    max-width: 100%;
-    width: 230px;
-    height: 100px;
-}
-
-.parclongchamp{
-    max-width: 100%;
-    width: 230px;
-    height: 120px;
-}
-
-#activites a{
-    text-decoration: none;
-    color: black;
-}
-
-#activites img{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#activites p{
-    font-weight: bolder;
-    height: 20px;
-    margin: 10px;
+#activites div a img{
+    box-shadow: 0 0 20px #F2F2F2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
 /* Footer */
 
-footer ul{
+footer {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer div {
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+}
+
+footer div ul {
+    list-style: none;
     padding-left: 0px;
 }
 
-footer li{
-    flex: 1 0 0% ;
-    list-style: none;
-}
-
-footer a{
+footer div ul li a {
     text-decoration: none;
     color: black;
 }
