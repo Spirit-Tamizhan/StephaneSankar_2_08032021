@@ -58,6 +58,13 @@ header nav ul li .blue {
     font-weight: bolder;
 }
 
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+/* Barre de recherche et Filtres */
+
 .recherche {
     margin-bottom: 30px;
 }
@@ -117,6 +124,38 @@ header nav ul li .blue {
     display: none;
 }
 
+/* Filtres */
+
+.filtres {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.filtres div {
+    flex: 1 0 0%;
+    border-left: none;
+    border: 2px #F2F2F2 solid;
+    border-radius: 25px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.fa-money-bill-wave {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+.fa-money-bill-wave::before {
+    color: #0065FC;
+}
+.filtres span {
+    padding-left: 10px;
+}
+
 /* Top Section (Hébergements à Marseille) */
 
 #hebergement {
@@ -126,72 +165,40 @@ header nav ul li .blue {
     margin-right: 20px;
 }
 
-#herbergement h3{
+#hebergement h3 {
     font-size: medium;
     font-weight: bolder;
+    padding-left: 33px;
 }
 
-#hebergement ul{
+#hebergement div { 
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0px;
-
+    margin: 10px;
 }
 
-#hebergement li{
+#hebergement div div {
     flex: 1 0 0%;
     background-color: white;
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
-    list-style: none;
+    margin: 17px;
 }
 
-.aubergelacannebiere{
+#hebergement div div a img {
     max-width: 100%;
     width: 150px;
     height: 70px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.hotelduport{
-    max-width: 100%;
-    width: 150px;
-    height: 70px;
-}
-
-.hotellesmouettes{
-    max-width: 100%;
-    width: 150px;
-    height: 70px;
-}
-
-.hoteldelamer{
-    max-width: 100%;
-    width: 150px;
-    height: 70px;
-}
-
-.aubergelepanier{
-    max-width: 100%;
-    width: 150px;
-    height: 70px;
-}
-
-.hotelchezamina{
-    max-width: 100%;
-    width: 150px;
-    height: 70px;
-}
-
-#hebergement img{
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-}
-#hebergement a{
+#hebergement div div a {
     text-decoration: none;
     color: black;
 }
 
-#hebergement p{
+#hebergement div div a p {
     margin-top: 0px;
     margin-bottom: 5px;
 }
@@ -199,6 +206,12 @@ header nav ul li .blue {
 .fa-star:before {
     content: "\f005";
     color: #0065FC;
+}
+
+#hebergement > p {
+    font-size: medium;
+    font-weight: bolder;
+    padding-left: 33px;
 }
 
 /* Aside section (Les plus populaires) */
@@ -215,6 +228,11 @@ header nav ul li .blue {
     display: inline-block;
     font-size: medium;
     font-weight: bolder;
+    padding-left: 22px;
+}
+
+.fa-chart-line:before{
+    padding-left: 170px;
 }
 
 #populaire ul{
@@ -227,32 +245,18 @@ header nav ul li .blue {
     background-color: white;
     border-radius: 5px;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #populaire div{
     display: inline-block;
     vertical-align: top;
 }
-.hlsdm{
-    max-width: 100%;
-    width: 100px;
-    height: 90px;
-}
-
-.acech{
-    max-width: 100%;
-    width: 100px;
-    height: 90px;
-}
-
-.htbeb{
-    max-width: 100%;
-    width: 100px;
-    height: 90px;
-}
 
 #populaire img{
+    max-width: 100%;
+    width: 100px;
+    height: 90px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
@@ -292,6 +296,11 @@ header nav ul li .blue {
     width: 100%;
     max-width: 200px;
     height: auto;
+}
+
+#activites div a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Footer */
