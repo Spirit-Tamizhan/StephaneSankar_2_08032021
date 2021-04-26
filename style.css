@@ -151,7 +151,7 @@ header nav ul li a:hover {
     padding-right: 20px;
 }
 
-.filtres div {
+.cadre {
     flex: 1 0 0%;
     border-left: none;
     border: 2px #F2F2F2 solid;
@@ -159,17 +159,45 @@ header nav ul li a:hover {
     height: 40px;
 }
 
-.fa-money-bill-wave {
+.icon {
+    position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #DEEBFF;
 }
+
+
 .fa-money-bill-wave::before {
     color: #0065FC;
+    position: absolute;
+    top: 10px;
+    left: 7px;
 }
-.filtres span {
-    padding-left: 10px;
+
+.fa-male::before {
+    color: #0065FC;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+
+.fa-dog::before {
+    color: #0065FC;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fa-heart::before {
+    color: #0065FC;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon span{
+    padding-left: 50px;
 }
 
 /* Info */
@@ -209,11 +237,10 @@ header nav ul li a:hover {
 }
 
 #hebergement div div {
-    flex: 1 0 0%;
     background-color: white;
     padding: 5px;
     border-radius: 5px;
-    margin: 17px;
+    margin: 20px;
 }
 
 #hebergement div div a img {
@@ -298,7 +325,7 @@ header nav ul li a:hover {
 }
 /* Bottom section (Activités à Marseille) */
 
-#activites div{
+#activites .cardtop{
     display: inline-block;
     background-color:white;
     border-bottom-left-radius: 5px;
@@ -306,6 +333,16 @@ header nav ul li a:hover {
     max-width: 100%;
     height: auto;
 }
+
+#activites .cardbottom {
+    display: inline-block;
+    background-color:white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
 #activites div a .heighttop img{
     width: 100%;
     height: 200px;
@@ -321,7 +358,6 @@ header nav ul li a:hover {
 }
 
 #activites div a img{
-    box-shadow: 0 0 20px #F2F2F2;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
