@@ -141,9 +141,7 @@ header nav ul li a:hover {
 /* Filtres */
 
 .filtres {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    display: inline-block
     font-weight: 700;
     font-size: 18px;
 }
@@ -153,7 +151,7 @@ header nav ul li a:hover {
 }
 
 .cadre {
-    flex: 1 0 0%;
+    display: inline-block;
     border-left: none;
     border: 2px #F2F2F2 solid;
     border-radius: 25px;
@@ -161,6 +159,7 @@ header nav ul li a:hover {
 }
 
 .icon {
+    display: inline-block;
     position: relative;
     width: 40px;
     height: 40px;
