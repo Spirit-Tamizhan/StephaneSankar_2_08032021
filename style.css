@@ -64,7 +64,7 @@ header nav ul li a {
     font-weight: bolder;
 }
 
-header nav ul li a.singup   {
+header nav ul li a.singup {
     text-decoration: none;
     color: #0065FC;
     font-weight: bolder;
@@ -73,6 +73,7 @@ header nav ul li a.singup   {
 header nav ul li a:hover {
     text-decoration: none;
     color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 /* Barre de recherche et Filtres */
@@ -225,22 +226,23 @@ header nav ul li a:hover {
 }
 
 #hebergement h3 {
-    font-size: medium;
+    font-size: large;
     font-weight: bolder;
-    padding-left: 33px;
+    padding-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 #hebergement div { 
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
 }
 
 #hebergement div div {
     background-color: white;
     padding: 5px;
     border-radius: 5px;
-    margin: 20px;
+    margin: 24px;
 }
 
 #hebergement div div a img {
@@ -249,6 +251,7 @@ header nav ul li a:hover {
     height: 70px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    object-fit: cover;
 }
 
 #hebergement div div a {
@@ -267,9 +270,11 @@ header nav ul li a:hover {
 }
 
 #hebergement > p {
-    font-size: medium;
+    font-size: large;
     font-weight: bolder;
-    padding-left: 33px;
+    padding-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 /* Aside section (Les plus populaires) */
@@ -284,13 +289,16 @@ header nav ul li a:hover {
 
 #populaire h3{
     display: inline-block;
-    font-size: medium;
+    font-size: large;
     font-weight: bolder;
     padding-left: 22px;
+    margin-bottom: 0px;
+    margin-top: 25px;
 }
 
 .fa-chart-line:before{
-    padding-left: 170px;
+    padding-left: 150px;
+    font-size: large;
 }
 
 #populaire ul{
@@ -317,6 +325,7 @@ header nav ul li a:hover {
     height: 90px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    object-fit: cover;
 }
 
 #populaire a{
@@ -324,45 +333,110 @@ header nav ul li a:hover {
     color: black;
 }
 /* Bottom section (Activités à Marseille) */
+#activites{
+    margin-bottom: 30px;
+}
+#activites h3{
+    font-size: large ;
+}
 
 #activites .cardtop{
     display: inline-block;
+    box-shadow: 0px 0px 20px 10px #F2F2F2;
     background-color:white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
-#activites .cardbottom {
+#activites .cardbottom{
     display: inline-block;
+}
+
+#activites .cardbottom .card1{
+    box-shadow: 0px 0px 20px 10px #F2F2F2;
     background-color:white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     max-width: 100%;
-    height: auto;
+    height: 140px;
+    margin: 0px 30px 30px 30px;
+}
+
+#activites .cardbottom .card2{
+    box-shadow: 0px 0px 20px 10px #F2F2F2;
+    background-color:white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    max-width: 100%;
+    height: 108px;
+    margin: 0px 30px 0px 30px;
+}
+
+#activites .cardbottom .card3{
+    box-shadow: 0px 0px 20px 10px #F2F2F2;
+    background-color:white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    max-width: 100%;
+    height: 140px;
+    margin: 0px 30px 30px 30px;
+}
+
+#activites .cardbottom .card4{
+    box-shadow: 0px 0px 20px 10px #F2F2F2;
+    background-color:white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    max-width: 100%;
+    height: 108px;
+    margin: 0px 30px 0px 30px;
 }
 
 #activites div a .heighttop img{
     width: 100%;
-    height: 200px;
+    height: 230px;
+    object-fit: cover;
 }
 
-#activites div a .heightbottom img{
+#activites div a .heightbottom1 img{
     width: 100%;
-    height: 73px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#activites div a .heightbottom2 img{
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+#activites div a .heightbottom3 img{
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+}
+
+#activites div a .heightbottom4 img{
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
 }
 
 #activites div a p {
     height: 25px;
+    font-size: medium;
+    font-weight: bolder;
+    margin: 10px;
 }
 
 #activites div a img{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
-    max-width: 200px;
-    height: auto;
+    max-width: 229px;
+    height: 100%;
 }
 
 #activites div a {
