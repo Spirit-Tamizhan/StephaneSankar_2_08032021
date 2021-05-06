@@ -24,45 +24,28 @@ header {
 }
 
 header div {
-  margin-top: 25px;
-}
-
-header .nav-desktop {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-header .nav-mobile a {
-  width: 50%;
   display: inline-block;
-  text-align: center;
+  vertical-align: top;
+  margin-top: 8px;
 }
 
 header nav ul {
-  display: flex;
+  display: inline-flex;
   font-size: medium;
   list-style: none;
   padding-left: 0px;
   margin: 0;
-}
-
-header nav ul li {
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-header nav ul li a {
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  gap: 5em;
 }
 
 header nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: bolder;
+  padding-top: 26px;
 }
 
 header nav ul li a.singup {
@@ -176,6 +159,10 @@ header nav ul li a:hover {
   background-color: #deebff;
 }
 
+.fas.fa-star.grey::before {
+  color: #f2f2f2;
+}
+
 .fa-money-bill-wave::before {
   color: #0065fc;
   position: absolute;
@@ -190,13 +177,7 @@ header nav ul li a:hover {
   left: 16px;
 }
 
-.fa-dog::before {
-  color: #0065fc;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
+.fa-dog::before,
 .fa-heart::before {
   color: #0065fc;
   position: absolute;
@@ -493,8 +474,8 @@ footer div ul li a {
 }
 
 @media only screen and (min-width: 768px) {
-  .nav-mobile {
-    display: none;
+  header nav {
+    display: inline-block;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -514,7 +495,20 @@ footer div ul li a {
 
 @media only screen and (max-width: 767px) {
   header ul li:nth-child(-n + 2) {
-    display: none;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  header nav ul {
+    width: 100%;
+    top: 70px;
+  }
+
+  #signin-parent {
+    position: absolute;
+    top: -44px;
+    right: 0;
   }
 
   .filtres h3 {
