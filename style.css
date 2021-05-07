@@ -144,6 +144,7 @@ header nav ul li a:hover {
   border: 2px #f2f2f2 solid;
   border-radius: 25px;
   height: 40px;
+  cursor: pointer;
 }
 
 .cadre span {
@@ -157,10 +158,6 @@ header nav ul li a:hover {
   height: 40px;
   border-radius: 50%;
   background-color: #deebff;
-}
-
-.fas.fa-star.grey::before {
-  color: #f2f2f2;
 }
 
 .fa-money-bill-wave::before {
@@ -208,12 +205,13 @@ header nav ul li a:hover {
 
 .hebergement-section {
   display: flex;
-  gap: 1.5em;
+  gap: 2.5em;
+  margin-bottom: 40px;
 }
 
 #hebergement {
   background-color: #f2f2f2;
-  border-radius: 5px;
+  border-radius: 15px;
   width: 65%;
   padding: 15px;
 }
@@ -222,19 +220,22 @@ header nav ul li a:hover {
   font-size: large;
   font-weight: bolder;
   margin-top: 25px;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
+  padding-left: 20px;
 }
 
 #hebergement .hebergement-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 2em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #hebergement .hebergement-cards div {
   background-color: white;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
   display: inline-block;
   width: 25%;
   flex-grow: 1;
@@ -243,8 +244,8 @@ header nav ul li a:hover {
 #hebergement .hebergement-cards div a img {
   width: 100%;
   height: 160px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   object-fit: cover;
 }
 
@@ -254,20 +255,30 @@ header nav ul li a:hover {
 }
 
 #hebergement .hebergement-cards div a p {
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 5px;
+  padding-left: 10px;
 }
 
 .fa-star:before {
   content: "\f005";
   color: #0065fc;
+  font-size: smaller;
+}
+
+.fas.fa-star.padding:before{
+  padding-left: 10px;
+}
+
+.fas.fa-star.color::before{
+  color: rgb(221, 219, 219);
 }
 
 #hebergement > p {
   font-size: large;
   font-weight: bolder;
   padding-left: 25px;
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 25px;
 }
 
@@ -276,8 +287,8 @@ header nav ul li a:hover {
 #populaire {
   vertical-align: top;
   background-color: #f2f2f2;
-  border-radius: 5px;
-  margin-bottom: 5px;
+  border-radius: 15px;
+  margin-bottom: 0px;
   width: 35%;
   padding: 15px;
 }
@@ -286,17 +297,27 @@ header nav ul li a:hover {
   font-size: large;
   font-weight: bolder;
   margin-bottom: 0px;
-  margin-top: 0;
+  margin-top: 25px;
+  padding-left: 25px;
+}
+
+i.fas.fa-chart-line{
+  margin-top: 25px;
+  padding-right: 15px;
 }
 
 .fa-chart-line:before {
   font-size: large;
 }
 
+#populaire .populaire-cards {
+  margin: 25px;
+}
+
 #populaire .populaire-cards a {
   display: inline-block;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px;
   margin-bottom: 25px;
   text-decoration: none;
@@ -320,8 +341,8 @@ header nav ul li a:hover {
 
 #populaire img {
   width: 40%;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   object-fit: cover;
   background-color: #ffffff;
   height: 130px;
@@ -330,6 +351,10 @@ header nav ul li a:hover {
 #populaire .populaire-stars {
   position: absolute;
   bottom: 10px;
+}
+
+.fas.fa-star.color::before{
+  color: rgb(221, 219, 219);
 }
 
 /* Bottom section (Activités à Marseille) */
@@ -349,8 +374,10 @@ header nav ul li a:hover {
   display: inline-block;
   box-shadow: 0px 0px 20px 10px #f2f2f2;
   background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   max-width: 100%;
   height: 100%;
 }
@@ -362,8 +389,10 @@ header nav ul li a:hover {
 #activites .cardbottom .card1 {
   box-shadow: 0px 0px 20px 10px #f2f2f2;
   background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   max-width: 100%;
   height: 140px;
   margin: 0px 30px 30px 30px;
@@ -372,8 +401,10 @@ header nav ul li a:hover {
 #activites .cardbottom .card2 {
   box-shadow: 0px 0px 20px 10px #f2f2f2;
   background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   max-width: 100%;
   height: 108px;
   margin: 0px 30px 0px 30px;
@@ -382,8 +413,10 @@ header nav ul li a:hover {
 #activites .cardbottom .card3 {
   box-shadow: 0px 0px 20px 10px #f2f2f2;
   background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   max-width: 100%;
   height: 140px;
   margin: 0px 0px 30px 30px;
@@ -392,8 +425,10 @@ header nav ul li a:hover {
 #activites .cardbottom .card4 {
   box-shadow: 0px 0px 20px 10px #f2f2f2;
   background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   max-width: 100%;
   height: 108px;
   margin: 0px 0px 0px 30px;
@@ -433,12 +468,13 @@ header nav ul li a:hover {
   height: 25px;
   font-size: medium;
   font-weight: bolder;
+  padding-left: 10px;
   margin: 10px;
 }
 
 #activites div a img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   width: 100%;
   height: 100%;
 }
