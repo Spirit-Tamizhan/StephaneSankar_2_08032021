@@ -9,7 +9,6 @@ body {
   font-style: normal;
   font-weight: normal;
   background-color: white;
-  min-width: 480px
 }
 
 .container {
@@ -101,7 +100,7 @@ header nav ul li a:hover {
   padding-left: 15px;
   font-size: 18px;
   font-weight: 600;
-  width: 230px;
+  width: 180px;
 }
 .recherche form button {
   width: 120px;
@@ -134,8 +133,8 @@ header nav ul li a:hover {
   font-size: 18px;
 }
 
-.filtres h3 {
-  padding-right: 20px;
+.filtres h2 {
+  padding-right: 0px;
 }
 
 .cadre {
@@ -146,6 +145,11 @@ header nav ul li a:hover {
   border-radius: 25px;
   height: 40px;
   cursor: pointer;
+}
+
+.cadre:hover{
+  border: 2px solid #0065fc;
+  color: #0065fc;
 }
 
 .cadre span {
@@ -221,7 +225,7 @@ header nav ul li a:hover {
   padding: 15px;
 }
 
-#hebergement h3 {
+#hebergement h2 {
   font-size: large;
   font-weight: bolder;
   margin-top: 25px;
@@ -298,7 +302,7 @@ header nav ul li a:hover {
   padding: 15px;
 }
 
-#populaire h3 {
+#populaire h2 {
   font-size: large;
   font-weight: bolder;
   margin-bottom: 0px;
@@ -307,7 +311,7 @@ header nav ul li a:hover {
 }
 
 i.fas.fa-chart-line{
-  margin-top: 25px;
+  margin-top: 26px;
   padding-right: 15px;
 }
 
@@ -366,7 +370,7 @@ i.fas.fa-chart-line{
 #activites {
   margin-bottom: 30px;
 }
-#activites h3 {
+#activites h2 {
   font-size: large;
 }
 
@@ -547,7 +551,14 @@ footer div ul li a {
   header nav ul {
     width: 100%;
     top: 70px;
+    gap: 0em;
   }
+
+  header ul li:hover {
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+  }
+
 
   #signin-parent {
     position: absolute;
@@ -555,11 +566,27 @@ footer div ul li a {
     right: 0;
   }
 
-  .filtres h3 {
+  .filtres h2 {
     display: block;
     width: 100%;
   }
 
+  .recherche form button {
+    width: 50px;
+  }
+
+  .recherche form button span{
+    display: none;
+  }
+
+  .recherche form button .fa-search{
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
   #hebergement .hebergement-cards div {
     width: 100%;
   }
