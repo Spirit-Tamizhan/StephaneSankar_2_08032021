@@ -159,8 +159,8 @@ header nav ul li a:hover {
 .icon {
   display: inline-block;
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: #deebff;
 }
@@ -168,28 +168,28 @@ header nav ul li a:hover {
 .fa-money-bill-wave::before {
   color: #0065fc;
   position: absolute;
-  top: 11px;
-  left: 9px;
+  top: 13px;
+  left: 10px;
 }
 
 .fa-male::before {
   color: #0065fc;
   position: absolute;
-  top: 11px;
-  left: 16px;
+  top: 12px;
+  left: 17px;
 }
 
 .fa-dog::before {
   color: #0065fc;
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: 12px;
 }
 .fa-heart::before {
   color: #0065fc;
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 13px;
+  left: 13px;
 }
 
 .icon span {
@@ -527,13 +527,29 @@ footer div ul li a {
 
 /*Tablette*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1024px){
   header nav {
     display: inline-block;
   }
+
+  #activites .cardbottom .card1,
+  #activites .cardbottom .card3 {
+    height: 140px;
+  }
+
+  #activites .cardbottom .card2,
+  #activites .cardbottom .card4 {
+    height: 108px;
+  }
+
+  #activites div a p {
+    height: 30px;
+    font-size: 14px;
+    margin: 7px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .hebergement-section {
     flex-direction: column;
   }
@@ -596,12 +612,15 @@ footer div ul li a {
 
   .recherche form input{
     width: 200px;
+    border-right: none;
   }
 
   .recherche form button {
     width: 55px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    position: relative;
+    right: 10px;
   }
 
   ::placeholder {
@@ -615,7 +634,7 @@ footer div ul li a {
   .recherche form button .fa-search{
     display: inline-block;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
   }
@@ -651,13 +670,23 @@ footer div ul li a {
     background-color:white;
   }
 
+  #hebergement h2{
+    padding-left: 10px;
+  }
+
   #hebergement .hebergement-cards{
     gap:1em;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   #hebergement .hebergement-cards div {
     width: 100%;
     box-shadow: 0px 0px 20px 10px #f2f2f2;
+  }
+
+  #hebergement > p{
+    padding-left: 10px;
   }
 
   #populaire {
@@ -684,13 +713,17 @@ footer div ul li a {
   }
 
   #activites{
-    padding: 40px;
+    padding: 25px;
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
   .activites-container {
     flex-direction: column;
+  }
+
+  #activites .activites-container {
+    gap: 0.8em;
   }
 
   #activites .cardbottom .card1,
